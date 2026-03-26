@@ -66,7 +66,7 @@ user-management-api/
   { "id": 4, "name": "Diana Prince", "email": "diana.prince@example.com" },
   { "id": 5, "name": "Ethan Hunt", "email": "ethan.hunt@example.com" }
 ]
-
+```
 ## Run Locally
 
 1. Install dependencies:
@@ -81,17 +81,49 @@ npm run dev
 Server runs at:
 ```bash
 http://localhost:3000
+```
 
 ## 🌍 Deployment
 
-We can deploy this project on Render, Railway, or Replit for a public demo:
 
-Render: https://render.com
+This project is deployed on **Render**. You can access the live API using the following URL:
 
+**Live URL:** [https://user-management-api-4qob.onrender.com/](https://user-management-api-4qob.onrender.com/)
 
+### How to Use the Live API
 
+You can test all endpoints directly on this URL:
 
-##nDemo Tips
+- **GET all users:**  
+`GET https://user-management-api-4qob.onrender.com/users`
+
+- **GET user by ID:**  
+`GET https://user-management-api-4qob.onrender.com/users/1`
+
+- **POST a new user:**  
+`POST https://user-management-api-4qob.onrender.com/users`  
+  
+```json
+{
+  "name": "Fiona Gallagher",
+  "email": "fiona.g@example.com"
+}
+```
+
+- **PUT (update) a user:**
+`PUT https://user-management-api-4qob.onrender.com/users/1`
+
+```json
+{
+  "name": "Alice Updated",
+  "email": "alice.updated@example.com"
+}
+```
+
+- **DELETE a user:**
+  `DELETE https://user-management-api-4qob.onrender.com/users/5`
+  
+## Demo Tips
 - Show GET /users with sample data
 - Show POST /users → new user added
 - Show PUT /users/:id → update a user
