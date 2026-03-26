@@ -69,16 +69,22 @@ user-management-api/
 ```
 ## Run Locally
 
-1. Install dependencies:
+1. **Clone the repository**
+   ```bash
+   git clone <https://github.com/Sangeeta-Prajapati/user-management-api.git>
+   cd user-management-api
+   ```
+
+2. Install dependencies:
 ```bash
 npm install
 ```
 
-Start the server (development mode with auto-reload):
+3. Start the server (development mode with auto-reload):
 ```bash
 npm run dev
 ```
-Server runs at:
+4. Server runs at:
 ```bash
 http://localhost:3000
 ```
